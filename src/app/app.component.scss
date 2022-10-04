@@ -1,0 +1,106 @@
+.landingpage {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #1F1D2B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &::before {
+      content: "";
+      position: fixed;
+      width: 180px;
+      height: 180px;
+      left: 20%;
+      top: 20%;
+      filter: blur(90px);
+      background-color: #a2facf;
+    }
+    &::after {
+      content: "";
+      position: fixed;
+      width: 180px;
+      height: 180px;
+      left: 80%;
+      top: 40%;
+      background-color: #64acff;
+      filter: blur(80px);
+    }
+    h1{
+      background: -webkit-linear-gradient(-70deg, #a2facf 0%, #64acff 100%);
+      -webkit-background-clip: text;
+      color: transparent;
+      font-size: 4rem;
+    }
+    p{
+      font-size: 1.5rem;
+      margin-top: 1rem;
+    }
+    .badge{
+      background-image: linear-gradient(-70deg, #a2facf 0%, #64acff 100%);
+      padding: 5px 10px;
+      margin: 0 5px;
+      border-radius: 5px;
+      font-size: 1rem;
+      color: #1F1D2B;
+      font-weight: bold;
+      box-shadow: 0 0 20px 0 rgba(255,255,255, 0.5);
+    }
+}
+.container-form{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  .disabled{
+    color: #bbb;
+  }
+  .form{
+    label{
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: bold;
+      display: block;
+    }
+    select{
+      width: 100%;
+      padding: 10px 20px;
+      margin: 10px 0;
+      border: 1px solid #64acff;
+      border-radius: 5px;
+      background-color: transparent;
+      color: #c4c4c4;
+      font-size: 1.2rem;
+      font-weight: bold;
+      outline: none;
+    }
+  }
+  h1{
+    background: -webkit-linear-gradient(-70deg, #a2facf 0%, #64acff 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 2.2rem;
+  }
+  button{
+    width: 100%;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #64acff;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+  }
+  .result{
+    color: #fff;
+  }
+}

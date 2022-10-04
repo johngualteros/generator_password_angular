@@ -1,5 +1,7 @@
 # GeneratorPasswordAngular
-
+![](./src/assets/password_01.png)
+![](./src/assets/password_02.png)
+![](./src/assets/password_03.png)
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
 
 ## Development server
